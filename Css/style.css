@@ -126,6 +126,113 @@ header {
     color: var(--hover-color);
 }
 
+#hamburger {
+    display: none;
+    cursor: pointer;
+    z-index: 1000;
+}
+
+#hamburger div {
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    margin: 5px;
+    transition: all 0.3s ease;
+}
+
+@media screen and (max-width: 768px) {
+    #hamburger {
+        display: block; 
+        position: absolute;
+        right: 5%;
+    }
+
+    .nav-links {
+        position: fixed;
+        right: 0px;
+        height: 90vh;
+        top: 10vh;
+        background-color: #0f172a; 
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 70%; 
+        transform: translateX(100%);
+        transition: transform 0.5s ease-in;
+    }
+
+    .nav-links li {
+        opacity: 0; 
+    }
+
+    .nav-active {
+        transform: translateX(0%);
+    }
+}
+
+.toggle .line1 {
+    transform: rotate(-45deg) translate(-5px, 6px);
+}
+.toggle .line2 {
+    opacity: 0;
+}
+.toggle .line3 {
+    transform: rotate(45deg) translate(-5px, -6px);
+}
+
+@keyframes navLinkFade {
+    from { opacity: 0; transform: translateX(50px); }
+    to { opacity: 1; transform: translateX(0px); }
+}
+
+@media (max-width: 768px) {
+    .navbar {
+        justify-content: space-between;
+        padding: 0 20px;
+    }
+
+    .navbar .logo {
+        position: static;
+    }
+
+    .navbar ul {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        flex-direction: column;
+        background: rgba(15, 23, 42, 0.95); /* Solidify background for readability */
+        backdrop-filter: blur(10px);
+        gap: 0;
+        display: none
+    }
+
+    .navbar ul.nav-active {
+        display: flex;
+    }
+
+    .navbar ul li {
+        width: 100%;
+        text-align: center;
+        padding: 15px 0;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    }
+
+    .dropdown-menu {
+        position: static;
+        opacity: 1;
+        visibility: visible;
+        display: none; 
+        box-shadow: none;
+        background: rgba(255, 255, 255, 0.05);
+    }
+
+    .dropdown.active .dropdown-menu {
+        display: block;
+    }
+}
+
+
 /* Navbar End */
 
 /* Slider Start */

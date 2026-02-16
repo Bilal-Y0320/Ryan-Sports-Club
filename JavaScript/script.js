@@ -18,12 +18,34 @@ document.addEventListener('click', (e) => {
 });
 
 window.onscroll = () => {
-    if(window.scrollY > 50){
+    if (window.scrollY > 50) {
         navbar.classList.add("scrolled");
     } else {
         navbar.classList.remove("scrolled");
     }
 }
+
+const navSlide = () => {
+    const burger = document.querySelector('.hamburger');
+    const nav = document.querySelector('.nav-links');
+    const navLinks = document.querySelectorAll('.nav-links li');
+
+    burger.addEventListener('click', () => {
+        nav.classList.toggle('nav-active');
+
+        navLinks.forEach((link, index) => {
+            if (link.style.animation) {
+                link.style.animation = '';
+            } else {
+                link.style.animation = `navLinkFade 0.5s ease forwards ${index / 7 + 0.3}s`;
+            }
+        });
+
+        burger.classList.toggle('toggle');
+    });
+}
+
+navSlide();
 
 // 3. cards filter
 filterButtons.forEach(btn => {
@@ -36,10 +58,10 @@ filterButtons.forEach(btn => {
         sportCards.forEach(card => {
             if (filter === "all") {
                 card.style.display = "flex";
-            } 
+            }
             else if (card.classList.contains(`card-${filter}`)) {
                 card.style.display = "flex";
-            } 
+            }
             else {
                 card.style.display = "none";
             }
@@ -55,7 +77,7 @@ function showTestimonial() {
     });
     current = (current + 1) % testimonialCards.length;
 }
-if(testimonialCards.length > 0) {
+if (testimonialCards.length > 0) {
     showTestimonial();
     setInterval(showTestimonial, 5000);
 }
@@ -66,7 +88,7 @@ faqs.forEach(faq => {
     faq.addEventListener('click', () => {
         faq.classList.toggle('active');
         const answer = faq.querySelector('.faq-answer');
-        if(faq.classList.contains('active')) {
+        if (faq.classList.contains('active')) {
             answer.style.maxHeight = answer.scrollHeight + "px";
         } else {
             answer.style.maxHeight = 0;
@@ -78,8 +100,8 @@ faqs.forEach(faq => {
 const form = document.getElementById('feedbackForm');
 const thankYouMessage = document.getElementById('thankYouMessage');
 
-if(form) {
-    form.addEventListener('submit', function(e) {
+if (form) {
+    form.addEventListener('submit', function (e) {
         e.preventDefault();
         const name = document.getElementById('name').value.trim();
         const email = document.getElementById('email').value.trim();
