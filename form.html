@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Membership form</title>
+    <link rel="stylesheet" href="Css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+
+<body>
+
+    <div id="p-container">
+        <a href="membership.html">Go back</a>
+    <div class="M-form-container">
+        <div id="header">
+            <h1>Membership Registration Form</h1>
+            <p>We offer a membership option tailored to meet your needs. To apply, please fill in and submit the form
+                from below.</p>
+            <p>If you would like more information, please ask your questions at </p>
+        </div>
+
+        <form id="membershipForm">
+    <div class="section">
+        <label><i class="fas fa-user"></i> Your Full Name</label>
+        <div class="row">
+            <div class="col">
+                <input type="text" id="firstName" placeholder="Jane" >
+                <small>First Name</small>
+            </div>
+            <div class="col">
+                <input type="text" id="lastName" placeholder="Doe" >
+                <small>Last Name</small>
+            </div>
+        </div>
+    </div>
+
+    <div class="section">
+        <label><i class="fas fa-at"></i> Your Email</label>
+        <input type="email" id="email" placeholder="e.g. jane.doe@email.com" >
+    </div>
+
+    <div class="section">
+        <label><i class="fas fa-phone"></i> Your Phone Number</label>
+        <input type="tel" id="phone" placeholder="e.g. +111111111111" >
+    </div>
+
+    <div class="section">
+        <label><i class="fas fa-map-marker-alt"></i> Your Address</label>
+        <input type="text" id="street" placeholder="1640 Riverside Drive">
+        <small>Street Address</small>
+        <div class="row">
+            <div class="col"><input type="text" id="city" placeholder="Hill Valley"><small>City</small></div>
+            <div class="col"><input type="text" id="state" placeholder="California"><small>State/Province</small></div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <input type="text" id="zipCode" placeholder="94601">
+                <small>Zip Code</small>
+            </div>
+            <div class="col"><input type="text" id="country" placeholder="USA"><small>Country</small></div>
+        </div>
+    </div>
+
+    <button type="submit" class="send-btn">SEND</button>
+</form>
+    </div>
+
+
+    <script src="./JavaScript/script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,544 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ryan Sports Club</title>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <link rel="stylesheet" href="./Css/style.css">
+</head>
+
+<body>
+    <header>
+        <div id="nav-aln">
+
+            <nav class="navbar">
+                <div class="logo">
+                    <img src="./Media/logo.png" alt="Logo">
+                </div>
+                <ul class="nav-links">
+                    <li><a href="#">Home</a></li>
+
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle">Sports ▾</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="./Indoor.html">Indoor Sports</a></li>
+                            <li><a href="./Outdoor.html">Outdoor Sports</a></li>
+                        </ul>
+                    </li>
+
+                    <li><a href="recreation.html">Recreation</a></li>
+                    <li><a href="schedule.html">Activities</a></li>
+                    <li><a href="membership.html">Membership</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="slider-wrapper">
+            <div class="slider-wrapper">
+                <button class="arrow prev"
+                    onclick="document.querySelector('.slider').scrollBy({left: -window.innerWidth, behavior: 'smooth'})">❮</button>
+                <button class="arrow next"
+                    onclick="document.querySelector('.slider').scrollBy({left: window.innerWidth, behavior: 'smooth'})">❯</button>
+
+                <div class="slider">
+                    <div class="slide" id="slide-1">
+                        <img src="./Media/run.webp" alt="Elite Training">
+                        <div class="slide-content">
+                            <h1>UNLEASH YOUR POTENTIAL</h1>
+                            <p>State-of-the-art facilities for athletes of all levels.</p>
+                            <button class="cta-btn">Join The Club</button>
+                        </div>
+                    </div>
+
+                    <div class="slide" id="slide-2">
+                        <img src="./Media/sunset-cricket-ground-with-stadium.avif" alt="Outdoor Arena">
+                        <div class="slide-content">
+                            <h1>CHAMPIONSHIP TURF</h1>
+                            <p>Experience our professional-grade football and cricket arena.</p>
+                            <button class="cta-btn">Book a Pitch</button>
+                        </div>
+                    </div>
+
+                    <div class="slide" id="slide-3">
+                        <img src="./Media/stock-photo-billiard-balls.jfif" alt="Indoor Sports">
+                        <div class="slide-content">
+                            <h1>PRECISION & PASSION</h1>
+                            <p>Premium indoor courts for Snooker, Badminton, and more.</p>
+                            <button class="cta-btn">Explore Facilities</button>
+                        </div>
+                    </div>
+
+                    <div class="slide" id="slide-4">
+                        <img src="./Media/slider-4th.jpg" alt="Recreation">
+                        <div class="slide-content">
+                            <h1>THE HUB OF RECREATION</h1>
+                            <p>A social community built for sport and connection.</p>
+                            <button class="cta-btn">Learn More</button>
+                        </div>
+                    </div>
+
+                    <div class="slide" id="slide-5">
+                        <img src="./Media/punching-power.webp" alt="Sports Academy">
+                        <div class="slide-content">
+                            <h1>ACADEMY PROGRAMS</h1>
+                            <p>Master your skills with expert coaching for all ages.</p>
+                            <button class="cta-btn">Register Now</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="slider-nav">
+                    <a href="#slide-1"></a>
+                    <a href="#slide-2"></a>
+                    <a href="#slide-3"></a>
+                    <a href="#slide-4"></a>
+                    <a href="#slide-5"></a>
+                </div>
+            </div>
+        </div>
+        </div>
+    </section>
+
+    <section id="Cards-section">
+        <div class="buttons">
+            <button data-filter="all" class="active">All</button>
+            <button data-filter="indoor">Indoor</button>
+            <button data-filter="outdoor">Outdoor</button>
+        </div>
+
+        <div class="all-cards">
+            <div class="card card-indoor">
+                <div class="image">
+                    <img src="Media/Sportscard-images/snooker-balls-in-circle-on-a-table.webp" alt="Snooker">
+                </div>
+                <div class="content">
+                    <h2>Snooker</h2>
+                    <p>Snooker is a popular indoor cue sport played on a large table using a cue stick and colored
+                        balls, known for precision and strategic play.</p>
+                </div>
+            </div>
+
+            <div class="card card-indoor">
+                <div class="image">
+                    <img src="Media/Sportscard-images/chess.jfif" alt="Chess">
+                </div>
+                <div class="content">
+                    <h2>Chess</h2>
+                    <p>Chess is a classic indoor board game played between two players, known for its strategy,
+                        planning, and critical thinking skills.</p>
+                </div>
+            </div>
+
+            <div class="card card-indoor">
+                <div class="image">
+                    <img src="Media/Sportscard-images/Playing Cards.jpg" alt="Playing Cards">
+                </div>
+                <div class="content">
+                    <h2>Playing Cards</h2>
+                    <p>Playing Cards are used for various indoor games played between two or more players, known for
+                        fun, strategy, and quick thinking.</p>
+                </div>
+            </div>
+
+            <div class="card card-indoor">
+                <div class="image">
+                    <img src="Media/Sportscard-images/ludo.jfif" alt="Ludo">
+                </div>
+                <div class="content">
+                    <h2>Ludo</h2>
+                    <p>Ludo is a popular indoor board game played between two to four players, known for fun, luck, and
+                        friendly competition.</p>
+                </div>
+            </div>
+
+            <div class="card card-indoor">
+                <div class="image">
+                    <img src="Media/Sportscard-images/badminton.jpg" alt="Badminton">
+                </div>
+                <div class="content">
+                    <h2>Badminton</h2>
+                    <p>Badminton is a fast-paced indoor sport played with rackets and a shuttlecock, known for speed,
+                        agility, and quick reflexes.</p>
+                </div>
+            </div>
+
+            <div class="card card-indoor">
+                <div class="image">
+                    <img src="Media/Sportscard-images/carrom.jpg" alt="Carrom">
+                </div>
+                <div class="content">
+                    <h2>Carrom</h2>
+                    <p>Carrom is a popular indoor board game played by flicking discs into corner pockets, known for
+                        skill, accuracy, and fun competition.</p>
+                </div>
+            </div>
+
+            <div class="card card-indoor">
+                <div class="image">
+                    <img src="Media/Sportscard-images/table-tennis-world-tour_16x9-cover.png" alt="Table Tennis">
+                </div>
+                <div class="content">
+                    <h2>Table Tennis</h2>
+                    <p>Table Tennis is a fast-paced indoor sport played with rackets and a lightweight ball, known for
+                        speed, reflexes, and quick rallies.</p>
+                </div>
+            </div>
+
+            <div class="card card-indoor">
+                <div class="image">
+                    <img src="Media/Sportscard-images/GoSports_FoosballTable_Side.jpg" alt="Foosball">
+                </div>
+                <div class="content">
+                    <h2>Foosball</h2>
+                    <p>Foosball is a fun indoor table game played by controlling small figures on rods, known for quick
+                        reflexes and fast-paced action.</p>
+                </div>
+            </div>
+
+            <div class="card card-outdoor">
+                <div class="image">
+                    <img src="Media/Sportscard-images/football.jfif" alt="Football">
+                </div>
+                <div class="content">
+                    <h2>Football</h2>
+                    <p>Football is a popular outdoor sport played between two teams of eleven players. It is known for
+                        speed, teamwork, and exciting goals.</p>
+                </div>
+            </div>
+
+            <div class="card card-outdoor">
+                <div class="image">
+                    <img src="Media/Sportscard-images/cricket.jfif" alt="Cricket">
+                </div>
+                <div class="content">
+                    <h2>Cricket</h2>
+                    <p>Cricket is a popular outdoor sport played between two teams using a bat and ball. It is famous
+                        for teamwork, strategy, and thrilling matches.</p>
+                </div>
+            </div>
+
+            <div class="card card-outdoor">
+                <div class="image">
+                    <img src="Media/Sportscard-images/jawline thrower.jpg" alt="Javelin">
+                </div>
+                <div class="content">
+                    <h2>Javelin Throw</h2>
+                    <p>Javelin throw is an outdoor athletic sport where players throw a spear-like object for distance.
+                        It requires strength and perfect technique.</p>
+                </div>
+            </div>
+
+            <div class="card card-outdoor">
+                <div class="image">
+                    <img src="Media/Sportscard-images/boxer.jfif" alt="Boxing">
+                </div>
+                <div class="content">
+                    <h2>Boxing</h2>
+                    <p>Boxing is a powerful combat sport where two players fight using punches under set rules. It
+                        focuses on strength and mental focus.</p>
+                </div>
+            </div>
+
+            <div class="card card-outdoor">
+                <div class="image">
+                    <img src="Media/Sportscard-images/running.jfif" alt="Running">
+                </div>
+                <div class="content">
+                    <h2>Running</h2>
+                    <p>Running is a simple and popular outdoor sport that improves fitness. It helps build endurance,
+                        speed, and overall body strength.</p>
+                </div>
+            </div>
+
+            <div class="card card-outdoor">
+                <div class="image">
+                    <img src="Media/Sportscard-images/golf.jfif" alt="Golf">
+                </div>
+                <div class="content">
+                    <h2>Golf</h2>
+                    <p>Golf is an outdoor sport where players hit a ball into holes using clubs. It requires focus,
+                        accuracy, and patience.</p>
+                </div>
+            </div>
+
+            <div class="card card-outdoor">
+                <div class="image">
+                    <img src="Media/Sportscard-images/kabadi.jfif" alt="Kabaddi">
+                </div>
+                <div class="content">
+                    <h2>Kabaddi</h2>
+                    <p>Kabaddi is a traditional outdoor team sport played with strength and strategy. It combines speed,
+                        power, and teamwork.</p>
+                </div>
+            </div>
+
+            <div class="card card-outdoor">
+                <div class="image">
+                    <img src="Media/Sportscard-images/volleyball.jfif" alt="Volleyball">
+                </div>
+                <div class="content">
+                    <h2>Volleyball</h2>
+                    <p>Volleyball is an energetic team sport played by hitting a ball over a net. It focuses on
+                        teamwork, timing, and quick reflexes.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="about-us">
+        <div class="journey-section">
+            <div class="line"></div>
+            <h3>About Us</h3>
+            <div class="journey-content">
+                <p>Ryan Sports Club began as a small initiative by sports lovers dedicated to promoting a healthy and
+                    active lifestyle for the youth. Over time, we have continuously upgraded our training programs and
+                    facilities to develop and nurture talented local players. From our first local matches to competing
+                    in major inter-city tournaments, our club has built a reputation for excellence. Through years of
+                    hard work and unwavering dedication, Ryan Sports Club has grown into a premier and trusted platform
+                    for athletes.
+                </p>
+                <img src="./About page/images/Our Journey.png" alt="Athlete Illustration" class="journey-img">
+            </div>
+        </div>
+
+        <section class="values-section">
+            <p class="subtitle"></p>
+            <h1 class="main-title">What You Need to Know</h1>
+            <div class="values-grid">
+                <div class="value-card">
+                    <div class="icon">🕒</div>
+                    <h3>Club Timing</h3>
+                    <p><strong>Mon - Fri:</strong> 6:00 AM - 10:00 PM</p>
+                    <p><strong>Sat - Sun:</strong> 7:00 AM - 11:00 PM</p>
+                    <p>Open on public holidays from 8:00 AM to 4:00 PM.</p>
+                </div>
+
+                <div class="value-card">
+                    <div class="icon">🏆</div>
+                    <h3>Our Activities</h3>
+                    <ul style="list-style: none; color: var(--sectxt-color); padding: 0;line-height: 2;">
+                        <li>Weekly Tournaments</li>
+                        <li>Professional Coaching</li>
+                        <li>Youth Summer Camps</li>
+                        <li>Annual Sports Day</li>
+                    </ul>
+                </div>
+
+                <div class="value-card">
+                    <div class="icon">🌐</div>
+                    <h3>Integrity</h3>
+                    <p>Integrity is the heartbeat of Ryan Sports Club, where we emphasize honesty, fair play, and
+                        accountability in every match and training session. We believe that true success is only
+                        achieved
+                        when athletes hold themselves to the highest moral and ethical standards.
+                    </p>
+                </div>
+            </div>
+        </section>
+    </section>
+
+    <section id="Feedback">
+        <div class="feedback-header">
+            <h1>We Value Your Feedback</h1>
+            <p>Tell us how we can improve your experience at Ryan Sports Club.</p>
+        </div>
+
+        <div id="merging-form">
+            <section class="feedback-txt">
+
+                <h2 class="feedback-heading">Level Up With Us.</h2>
+
+                <p>
+                    At <span>Ryan Sports Club</span>, excellence isn’t optional — it’s the standard.
+                    Your feedback helps us sharpen our facilities, coaching, and overall experience.
+                </p>
+
+                <p>
+                    Whether it’s the thrill of competition or the spirit of teamwork,
+                    tell us how we’re doing.
+                </p>
+
+                <h3 class="tagline">Train. Compete. Improve. Repeat.</h3>
+
+            </section>
+            
+            <section class="feedback-form-section">
+                <form id="feedbackForm">
+                    <label for="name">Full Name *</label>
+                    <input type="text" id="name" name="name" placeholder="Your full name" required>
+
+                    <label for="email">Email Address *</label>
+                    <input type="email" id="email" name="email" placeholder="Your email" required>
+
+                    <label for="sport">Which sport do you play?</label>
+                    <select id="sport" name="sport">
+                        <option value="">Select a sport</option>
+                        <option value="cricket">Cricket</option>
+                        <option value="football">Football</option>
+                        <option value="badminton">Badminton</option>
+                        <option value="table-tennis">Table Tennis</option>
+                    </select>
+
+                    <label>Rate Your Experience *</label>
+                    <div class="rating">
+                        <input type="radio" name="stars" id="star5" value="5" required><label for="star5">★</label>
+                        <input type="radio" name="stars" id="star4" value="4"><label for="star4">★</label>
+                        <input type="radio" name="stars" id="star3" value="3"><label for="star3">★</label>
+                        <input type="radio" name="stars" id="star2" value="2"><label for="star2">★</label>
+                        <input type="radio" name="stars" id="star1" value="1"><label for="star1">★</label>
+                    </div>
+
+                    <label for="feedback">Your Feedback *</label>
+                    <textarea id="feedback" name="feedback" placeholder="Write your thoughts..." required></textarea>
+
+                    <button type="submit">Submit Feedback</button>
+                </form>
+
+                <div id="thankYouMessage" class="hidden">
+                    <h2>Thank You!</h2>
+                    <p>Your feedback helps us improve Ryan Sports Club.</p>
+                </div>
+            </section>
+        </div>
+
+        <div id="merging-feedback">
+            <section class="testimonials-section">
+                <h2>What Our Players Say</h2>
+                <div class="testimonial-cards">
+                    <div class="card">
+                        <p>"Ryan Sports Club has amazing coaches and facilities!"</p>
+                        <span>- Ali R.</span>
+                    </div>
+                    <div class="card">
+                        <p>"I love the training sessions here. Very professional!"</p>
+                        <span>- Sara K.</span>
+                    </div>
+                    <div class="card">
+                        <p>"Great environment and friendly staff. Highly recommend!"</p>
+                        <span>- Ahmed M.</span>
+                    </div>
+                </div>
+            </section>
+
+            <section class="faq-section">
+                <h2>Frequently Asked Questions</h2>
+                <div class="faq-container">
+                    <div class="faq">
+                        <div class="faq-question">What sports programs do you offer?</div>
+                        <div class="faq-answer">We offer Cricket, Football, Badminton, and Table Tennis programs for all
+                            age
+                            groups.</div>
+                    </div>
+                    <div class="faq">
+                        <div class="faq-question">How can I join Ryan Sports Club?</div>
+                        <div class="faq-answer">You can fill out the registration form on our website or visit us
+                            directly
+                            at the club.</div>
+                    </div>
+                    <div class="faq">
+                        <div class="faq-question">Do you offer trial sessions?</div>
+                        <div class="faq-answer">Yes! We offer trial sessions for new members to experience our training
+                            programs.</div>
+                    </div>
+                    <div class="faq">
+                        <div class="faq-question">What are the membership fees?</div>
+                        <div class="faq-answer">Membership fees vary based on the program. Please contact us for
+                            detailed
+                            pricing.</div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </section>
+
+    <footer class="footer-section">
+
+        <div class="container-grid ">
+            <div class="f-about">
+                <h3>Ryan Sports Club</h3>
+                <p>
+                    Empowering athletes since our inception. We provide world-class facilities and expert coaching
+                    to help you reach your maximum potential in every game.
+                </p>
+            </div>
+            <!-- end -->
+            <div class="f-links">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><span><ion-icon name="arrow-forward-outline"></ion-icon></span><a href="#">Home</a></li>
+                    <li><span><ion-icon name="arrow-forward-outline"></ion-icon></span><a href="Aboutpage.html">About
+                            Us</a></li>
+                    <li><span><ion-icon name="arrow-forward-outline"></ion-icon></span><a
+                            href="membership.html">Membership</a></li>
+                    <li><span><ion-icon name="arrow-forward-outline"></ion-icon></span><a
+                            href="gallery.html">Gallery</a></li>
+                    <li><span><ion-icon name="arrow-forward-outline"></ion-icon></span><a
+                            href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <!-- end -->
+
+            <div class="f-services">
+                <h3>Our Sports</h3>
+                <ul>
+                    <li><span><ion-icon name="arrow-forward-outline"></ion-icon></span><a href="#">Cricket Training</a>
+                    </li>
+                    <li><span><ion-icon name="arrow-forward-outline"></ion-icon></span><a href="#">Football League</a>
+                    </li>
+                    <li><span><ion-icon name="arrow-forward-outline"></ion-icon></span><a href="#">Badminton Court</a>
+                    </li>
+                    <li><span><ion-icon name="arrow-forward-outline"></ion-icon></span><a href="#">Indoor Games</a></li>
+                    <li><span><ion-icon name="arrow-forward-outline"></ion-icon></span><a href="#">Youth Camps</a></li>
+                </ul>
+            </div>
+            <!-- end -->
+            <div class="f-address">
+                <h3>Have a Question?</h3>
+                <address>
+                    <div>
+                        <p><span><ion-icon name="location-outline"></ion-icon></span> Sindh, Karachi</p>
+                    </div>
+                    <div>
+                        <p><span><ion-icon name="call-outline"></ion-icon></span><a href="tel:+923112005919">+92 311
+                                2005919</a></p>
+                    </div>
+                    <div>
+                        <p><span><ion-icon name="mail-outline"></ion-icon></span><a
+                                href="mailto:info@ryansports.com">info@ryansports.com</a></p>
+                    </div>
+                </address>
+            </div>
+        </div>
+
+        <div class="containor">
+            <div class="all-icons">
+                <a href="#" class="instagram" target="_blank">
+                    <ion-icon name="logo-instagram"></ion-icon>
+                </a>
+
+                <a href="#" class="facebook" target="_blank">
+                    <ion-icon name="logo-facebook"></ion-icon>
+                </a>
+
+                <a href="#" class="youtube" target="_blank">
+                    <ion-icon name="logo-youtube"></ion-icon>
+                </a>
+            </div>
+        </div>
+        <div class="copright">
+            <p>© 2026 Ryan Sports Club. Built for Champions. All Rights Reserved.</p>
+        </div>
+
+    </footer>
+
+    <script src="JavaScript/script.js"></script>
+</body>
+
+</html>
